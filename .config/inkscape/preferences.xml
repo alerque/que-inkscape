@@ -403,7 +403,7 @@
     <eventcontext
        id="select"
        selcue="1"
-       gradientdrag="0" />
+       gradientdrag="1" />
     <eventcontext
        id="connector"
        style="fill:none;fill-rule:evenodd;stroke:black;stroke-opacity:1;stroke-linejoin:miter;stroke-width:1px;stroke-linecap:butt;"
@@ -418,9 +418,9 @@
        offset="0"
        offsetunits="pt" />
     <group
-       id="measure"
+       unit="px"
        fontsize="10"
-       unit="px" />
+       id="measure" />
   </group>
   <group
      id="palette">
@@ -551,7 +551,8 @@
        panel_border="0" />
   </group>
   <group
-     id="dialogs">
+     id="dialogs"
+     showclose="1">
     <group
        id="toolbox" />
     <group
@@ -580,7 +581,17 @@
        state="1" />
     <group
        id="preferences"
-       state="1" />
+       state="1"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       page="0"
+       x="2253"
+       y="122"
+       w="774"
+       h="836" />
     <group
        id="gradienteditor" />
     <group
@@ -661,9 +672,23 @@
        id="filtereffects" />
     <group
        id="transparency"
-       on-focus="1.0"
+       on-focus="1"
        on-blur="0.50"
        animate-time="100" />
+    <group
+       id="inputdevices"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       x="0"
+       y="0"
+       w="601"
+       h="478"
+       visible="0"
+       state="2"
+       placement="1" />
   </group>
   <group
      id="printing">
@@ -695,7 +720,7 @@
        value="0" />
     <group
        id="switchonextinput"
-       value="0" />
+       value="1" />
     <group
        id="useextinput"
        value="1" />
@@ -759,7 +784,7 @@
        value="0" />
     <group
        id="wheelzooms"
-       value="0" />
+       value="1" />
     <group
        id="transientpolicy"
        value="1" />
@@ -911,7 +936,7 @@
        named_nodelay="0" />
     <group
        id="autosave"
-       enable="0"
+       enable="1"
        interval="10"
        path=""
        max="10" />
@@ -984,7 +1009,7 @@
     <group
        id="tools"
        icononly="1"
-       small="0" />
+       small="1" />
   </group>
   <group
      id="iconpreview"
